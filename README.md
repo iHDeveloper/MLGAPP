@@ -1,4 +1,4 @@
 # MLGAPP
-[X] Server / Client
-[X] Packets
+[x] Server / Client
+[x] Packets
 [ ] Class
