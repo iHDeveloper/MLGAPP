@@ -42,6 +42,12 @@ public class Server{
             return clients;
         }
         
+        public void sendPacket(Socket s, Packet packet) throws IOException{
+            ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(s.getOutputStream()));
+            out.writeObject(packet);
+            out.flush();
+        }
+        
 }
 class ServerThread implements Runnable{
 
